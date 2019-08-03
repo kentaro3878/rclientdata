@@ -1,0 +1,150 @@
+{
+  "front-version": "2.19.2",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Scenario",
+      "description": "LocationCsvテストデータ作成用",
+      "id": "d05182c0-1555-405d-a1b1-f8c8aeab5294",
+      "lastModified": "2019-08-03T13:28:06.692+09:00",
+      "name": "addLocationTest",
+      "requestOrder": [
+        "Request 1",
+        "Request 2",
+        "Request 3"
+      ]
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"user_id\": \"cf5bff5c-2ffe-4f18-9593-bc666313f8c5\",\n\"location\": {\n\"lat_north_south\": \"N\",\n\"latitude\": \"35.744947\",\n\"lon_west_east\": \"E\",\n\"longitude\": \"139.720168\"\n},\n\"timestamp\": 1555055157\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "location.kanipan.blue",
+        "path": "/api/location"
+      },
+      "id": "faf87125-e390-44af-b151-cd62d1c6cf3b",
+      "lastModified": "2019-08-03T12:57:54.488+09:00",
+      "name": "Request 1",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "d05182c0-1555-405d-a1b1-f8c8aeab5294"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"user_id\": \"cf5bff5c-2ffe-4f18-9593-bc666313f8c6\",\n\"location\": {\n\"lat_north_south\": \"S\",\n\"latitude\": \"35.744947\",\n\"lon_west_east\": \"W\",\n\"longitude\": \"139.720169\"\n},\n\"timestamp\": 1555055158\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "location.kanipan.blue",
+        "path": "/api/location"
+      },
+      "id": "5f81dff9-f048-4349-8d71-2f7cb78bd083",
+      "lastModified": "2019-08-03T12:59:37.073+09:00",
+      "name": "Request 2",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "d05182c0-1555-405d-a1b1-f8c8aeab5294"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "{\n\"user_id\": \"cf5bff5c-2ffe-4f18-9593-bc666313f8c7\",\n\"location\": {\n\"lat_north_south\": \"S\",\n\"latitude\": \"35.744948\",\n\"lon_west_east\": \"E\",\n\"longitude\": \"139.720170\"\n},\n\"timestamp\": 1555055159\n}"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "location.kanipan.blue",
+        "path": "/api/location"
+      },
+      "id": "9c8359f3-42bd-4633-93aa-feeac9ad3e10",
+      "lastModified": "2019-08-03T13:28:06.692+09:00",
+      "name": "Request 3",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "metaInfo": {},
+      "parentId": "d05182c0-1555-405d-a1b1-f8c8aeab5294"
+    }
+  ]
+}
